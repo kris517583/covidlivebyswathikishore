@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+ var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://covid-19-india.p.rapidapi.com/helpline_numbers",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "covid-19-india.p.rapidapi.com",
+		"x-rapidapi-key": "d7ce9fe55fmsh545b1bb126dd24ep173390jsn9b8de9d9e7f4"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+</script>
+</body>
+</html>
